@@ -12,20 +12,18 @@
                 "next_question": null
             }
         },
-       
         "2": {
-            "question_text": "Har sökande praktiskt erfahrenhet?",
+            "question_text": "Har sökande praktiskt erfarenhet?",
             "yes": {
                 "decision": "approved",
                 "next_question": 3
             },
             "no": {
                 "decision": "rejected",
-                "legal_reason": "Sökande har inte tillräckligt praktisk erfahrenhet",
+                "legal_reason": "Sökande har inte tillräckligt praktisk erfarenhet.",
                 "next_question": null
             }
         },
-       
         "3": {
             "question_text": "Är sökande lämplig?",
             "yes": {
@@ -34,11 +32,11 @@
             },
             "no": {
                 "decision": "rejected",
-                "legal_reason": "sökande är inte lämplig",
+                "legal_reason": "Sökande är inte lämplig.",
                 "next_question": null
             }
-        }
-             "4": {
+        },
+        "4": {
             "question_text": "Är dokumenten tillräckliga och fullständiga?",
             "yes": {
                 "decision": "approved",
@@ -46,25 +44,23 @@
             },
             "no": {
                 "decision": "rejected",
-                "legal_reason": "dokumenten är inte tillräckliga",
+                "legal_reason": "Dokumenten är inte tillräckliga.",
                 "next_question": null
             }
-        }
-
-             "5": {
-            "question_text": "kommer en intervju att genomföras?",
+        },
+        "5": {
+            "question_text": "Kommer en intervju att genomföras?",
             "yes": {
                 "decision": "approved",
                 "next_question": 6
             },
             "no": {
                 "decision": "rejected",
-                "legal_reason": "Intervju avslages",
+                "legal_reason": "Intervju avslås.",
                 "next_question": null
             }
-        }
-
-             "6": {
+        },
+        "6": {
             "question_text": "Var intervjun tillfredsställande?",
             "yes": {
                 "decision": "approved",
@@ -72,44 +68,39 @@
             },
             "no": {
                 "decision": "rejected",
-                "legal_reason": "sökande är inte lämplig",
+                "legal_reason": "Sökande är inte lämplig.",
                 "next_question": null
             }
-        }
-
-             "7": {
-            "question_text": "Behövs kompleterande utbildning?",
+        },
+        "7": {
+            "question_text": "Behövs kompletterande utbildning?",
             "yes": {
-               
                 "next_question": null,
-                "legal_reason": "",
+                "legal_reason": ""
             },
             "no": {
                 "decision": "approved",
-                
                 "next_question": null
-            }    
-        }
-
-       "8": {
-            "question_text": "Har kompletrerander utbildning genomförts?",
+            }
+        },
+        "8": {
+            "question_text": "Har kompletterande utbildning genomförts?",
             "yes": {
-                 "decision": "approved",
+                "decision": "approved",
                 "next_question": "beviljats",
-                "legal_reason": "",
+                "legal_reason": ""
             },
             "no": {
                 "decision": "rejected",
-                "legal_reason": "Kompleterande utbildning behövs",
+                "legal_reason": "Kompletterande utbildning behövs.",
                 "next_question": null
-            }    
+            }
+        },
+        "beviljats": {
+            "legal_reason": "Personen har beviljats."
+        },
+        "avslagits": {
+            "legal_reason": "Personen har avslagits."
         }
-
-      "beviljats": {
-         "legal_reason": "Personen har beviljats"
-    },
-      "avslagits":{
-         "legal_reason": "Personen har avslagits"
-      }
-}
+    }
 }
