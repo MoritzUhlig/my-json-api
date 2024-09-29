@@ -1,45 +1,115 @@
 {
    "questions": {
-        "question1": {
-            "question_text": "Are you over 18?",
+        "1": {
+            "question_text": "Har sökande tillfredsstellande utbildning?",
             "yes": {
                 "decision": "approved",
-                "legal_reason": "According to legal code X, individuals over 18 are eligible.",
                 "next_question": 2
             },
             "no": {
                 "decision": "rejected",
-                "legal_reason": "Underage individuals are not eligible per law Y.",
+                "legal_reason": "Sökande har inte tillfredsställande utbildning.",
                 "next_question": null
             }
         },
        
-        "question2": {
-            "question_text": "Do you agree with the terms and conditions?",
+        "2": {
+            "question_text": "Har sökande praktiskt erfahrenhet?",
             "yes": {
                 "decision": "approved",
-                "legal_reason": "By agreeing to the terms, you comply with legal requirement Z.",
                 "next_question": 3
             },
             "no": {
                 "decision": "rejected",
-                "legal_reason": "You must agree to the terms to proceed.",
+                "legal_reason": "Sökande har inte tillräckligt praktisk erfahrenhet",
                 "next_question": null
             }
         },
        
-        "question3": {
-            "question_text": "Do you have a valid ID?",
+        "3": {
+            "question_text": "Är sökande lämplig?",
             "yes": {
                 "decision": "approved",
-                "legal_reason": "Legal code Y requires a valid ID for verification.",
-                "next_question": null
+                "next_question": 4
             },
             "no": {
                 "decision": "rejected",
-                "legal_reason": "A valid ID is required under law Z.",
+                "legal_reason": "sökande är inte lämplig",
                 "next_question": null
             }
         }
-    }
+             "4": {
+            "question_text": "Är dokumenten tillräckliga och fullständiga?",
+            "yes": {
+                "decision": "approved",
+                "next_question": 5
+            },
+            "no": {
+                "decision": "rejected",
+                "legal_reason": "dokumenten är inte tillräckliga",
+                "next_question": null
+            }
+        }
+
+             "5": {
+            "question_text": "kommer en intervju att genomföras?",
+            "yes": {
+                "decision": "approved",
+                "next_question": 6
+            },
+            "no": {
+                "decision": "rejected",
+                "legal_reason": "Intervju avslages",
+                "next_question": null
+            }
+        }
+
+             "6": {
+            "question_text": "Var intervjun tillfredsställande?",
+            "yes": {
+                "decision": "approved",
+                "next_question": 7
+            },
+            "no": {
+                "decision": "rejected",
+                "legal_reason": "sökande är inte lämplig",
+                "next_question": null
+            }
+        }
+
+             "7": {
+            "question_text": "Behövs kompleterande utbildning?",
+            "yes": {
+               
+                "next_question": null,
+                "legal_reason": "",
+            },
+            "no": {
+                "decision": "approved",
+                
+                "next_question": null
+            }    
+        }
+
+       "8": {
+            "question_text": "Har kompletrerander utbildning genomförts?",
+            "yes": {
+                 "decision": "approved",
+                "next_question": "beviljats",
+                "legal_reason": "",
+            },
+            "no": {
+                "decision": "rejected",
+                "legal_reason": "Kompleterande utbildning behövs",
+                "next_question": null
+            }    
+        }
+
+      "beviljats": {
+         "legal_reason": "Personen har beviljats"
+    },
+      "avslagits":{
+         "legal_reason": "Personen har avslagits"
+      }
+}
 }
