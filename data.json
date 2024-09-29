@@ -1,44 +1,45 @@
 {
-   "questions"{
-        "question1":{
-             "question_text": "Are you over 18?",
-        "yes": {
-            "decision": "approved",
-            "legal_reason": "According to legal code X, individuals over 18 are eligible.",
-            "next_question": 2
-        },
-        "no": {
-            "decision": "rejected",
-            "legal_reason": "Underage individuals are not eligible per law Y.",
-            "next_question": null
-        }
-        },
-       
-       "question2":{
-           "question_text": "Do you agree with the terms and conditions?",
-        "yes": {
-            "decision": "approved",
-            "legal_reason": "By agreeing to the terms, you comply with legal requirement Z.",
-            "next_question": 3
-        },
-        "no": {
-            "decision": "rejected",
-            "legal_reason": "You must agree to the terms to proceed.",
-            "next_question": null
-        }
+   "questions": {
+        "question1": {
+            "question_text": "Are you over 18?",
+            "yes": {
+                "decision": "approved",
+                "legal_reason": "According to legal code X, individuals over 18 are eligible.",
+                "next_question": 2
+            },
+            "no": {
+                "decision": "rejected",
+                "legal_reason": "Underage individuals are not eligible per law Y.",
+                "next_question": null
+            }
         },
        
-        "question3":{
-                  "question_text": "Do you have a valid ID?",
-        "yes": {
-            "decision": "approved",
-            "legal_reason": "Legal code Y requires a valid ID for verification.",
-            "next_question": null
+        "question2": {
+            "question_text": "Do you agree with the terms and conditions?",
+            "yes": {
+                "decision": "approved",
+                "legal_reason": "By agreeing to the terms, you comply with legal requirement Z.",
+                "next_question": 3
+            },
+            "no": {
+                "decision": "rejected",
+                "legal_reason": "You must agree to the terms to proceed.",
+                "next_question": null
+            }
         },
-        "no": {
-            "decision": "rejected",
-            "legal_reason": "A valid ID is required under law Z.",
-            "next_question": null
+       
+        "question3": {
+            "question_text": "Do you have a valid ID?",
+            "yes": {
+                "decision": "approved",
+                "legal_reason": "Legal code Y requires a valid ID for verification.",
+                "next_question": null
+            },
+            "no": {
+                "decision": "rejected",
+                "legal_reason": "A valid ID is required under law Z.",
+                "next_question": null
+            }
         }
-        },    
-}}
+    }
+}
