@@ -75,7 +75,7 @@
         "7": {
             "question_text": "Is the person deemed suitable?",
             "yes": {
-                "next_question": "approved"
+                "next_question": "8"
             },
             "no": {
                 "decision": "rejected",
@@ -83,7 +83,8 @@
             }
         }
     },
-    "approved": {
-        "legal_reason": "The person has been granted authorization."
+    "8": {
+        "question_text": "The person has been granted authorization."
+        
     }
 }
