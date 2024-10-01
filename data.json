@@ -1,106 +1,89 @@
 {
-   "questions": {
+    "questions": {
         "1": {
-            "question_text": "Har sökande tillfredsstellande utbildning?",
+            "question_text": "Does the education concern B-authorization?",
             "yes": {
                 "decision": "approved",
                 "next_question": 2
             },
             "no": {
                 "decision": "rejected",
-                "legal_reason": "Sökande har inte tillfredsställande utbildning.",
+                "legal_reason": "The wrong authorization was applied for.",
                 "next_question": null
             }
         },
         "2": {
-            "question_text": "Har sökande praktiskt erfarenhet?",
+            "question_text": "Did the education include 'Practical Electrical Engineering'?",
             "yes": {
                 "decision": "approved",
                 "next_question": 3
             },
             "no": {
                 "decision": "rejected",
-                "legal_reason": "Sökande har inte tillräckligt praktisk erfarenhet.",
+                "legal_reason": "The applicant does not have the course 'Practical Electrical Engineering'.",
                 "next_question": null
             }
         },
         "3": {
-            "question_text": "Är sökande lämplig?",
+            "question_text": "Does the education include 'Electrical Power Technology'?",
             "yes": {
                 "decision": "approved",
                 "next_question": 4
             },
             "no": {
                 "decision": "rejected",
-                "legal_reason": "Sökande är inte lämplig.",
+                "legal_reason": "The course 'Electrical Power Technology' was missing.",
                 "next_question": null
             }
         },
         "4": {
-            "question_text": "Är dokumenten tillräckliga och fullständiga?",
+            "question_text": "Is the individual approved in all of these courses?",
             "yes": {
                 "decision": "approved",
                 "next_question": 5
             },
             "no": {
                 "decision": "rejected",
-                "legal_reason": "Dokumenten är inte tillräckliga.",
+                "legal_reason": "The individual lacks passing grades in required courses.",
                 "next_question": null
             }
         },
         "5": {
-            "question_text": "Kommer en intervju att genomföras?",
+            "question_text": "Does the person have at least two years of practical experience in electrical installation work?",
             "yes": {
                 "decision": "approved",
                 "next_question": 6
             },
             "no": {
                 "decision": "rejected",
-                "legal_reason": "Intervju avslås.",
+                "legal_reason": "Practical experience in electrical installation work is missing.",
                 "next_question": null
             }
         },
         "6": {
-            "question_text": "Var intervjun tillfredsställande?",
+            "question_text": "Is at least one year of practical experience in electrical installation work at an electrical installation company that is active in one of the types of activities in Chapter 4, Section 2 or 3 ELSÄK 2017:3?",
             "yes": {
                 "decision": "approved",
                 "next_question": 7
             },
             "no": {
                 "decision": "rejected",
-                "legal_reason": "Sökande är inte lämplig.",
+                "legal_reason": "The person is missing one year of practical experience in electrical installation work at an electrical installation company that is active in one of the types of activities in Chapter 4, Section 2 or 3 ELSÄK 2017:3.",
                 "next_question": null
             }
         },
         "7": {
-            "question_text": "Behövs kompletterande utbildning?",
+            "question_text": "Is the person deemed suitable?",
             "yes": {
-                "next_question": null,
-                "legal_reason": ""
-            },
-            "no": {
-                "decision": "approved",
-                "next_question": null
-            }
-        },
-        "8": {
-            "question_text": "Har kompletterande utbildning genomförts?",
-            "yes": {
-                "decision": "approved",
-                "next_question": "beviljats",
-                "legal_reason": ""
+                "next_question": "approved"
             },
             "no": {
                 "decision": "rejected",
-                "legal_reason": "Kompletterande utbildning behövs.",
-                "next_question": null
+                "legal_reason": "The person was deemed unsuitable."
             }
-        },
-        "beviljats": {
-            "legal_reason": "Personen har beviljats."
-        },
-        "avslagits": {
-            "legal_reason": "Personen har avslagits."
         }
+    },
+    "approved": {
+        "legal_reason": "The person has been granted authorization."
     }
 }
