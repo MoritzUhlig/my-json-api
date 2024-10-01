@@ -81,10 +81,10 @@
                 "decision": "rejected",
                 "legal_reason": "The person was deemed unsuitable."
             }
-        }
-    },
+        },
     "8": {
         "question_text": "The person has been granted authorization."
         
     }
+}
 }
