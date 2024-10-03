@@ -13,10 +13,6 @@
             }
         },
 
-        "1n": {
-            "question_text": "fail"
-            
-        },
         "2": {
             "question_text": "Did the education include 'Practical Electrical Engineering' and 'Electrical Power Technology'?",
             "yes": {
