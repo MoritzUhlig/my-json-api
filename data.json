@@ -13,78 +13,63 @@
             }
         },
         "2": {
-            "question_text": "Did the education include 'Practical Electrical Engineering'?",
-            "yes": {
-                "decision": "approved",
-                "next_question": 3
-            },
-            "no": {
-                "decision": "rejected",
-                "legal_reason": "The applicant does not have the course 'Practical Electrical Engineering'.",
-                "next_question": null
-            }
-        },
-        "3": {
-            "question_text": "Does the education include 'Electrical Power Technology'?",
+            "question_text": "Did the education include 'Practical Electrical Engineering' and 'Electrical Power Technology'?",
             "yes": {
                 "decision": "approved",
                 "next_question": 4
             },
             "no": {
                 "decision": "rejected",
-                "legal_reason": "The course 'Electrical Power Technology' was missing.",
+                "next_question": 3
+            }
+        },
+        "3": {
+            "question_text": "Did the applicant have courses that are equivalent to 'Practical Electrical Engineering' or 'Electrical Power Technology'?",
+            "yes": {
+                "decision": "approved",
+                "next_question": 4
+            },
+            "no": {
+                "decision": "rejected",
+                "legal_reason": "The applicant does not have the required education.",
                 "next_question": null
             }
         },
         "4": {
-            "question_text": "Is the individual approved in all of these courses?",
-            "yes": {
-                "decision": "approved",
-                "next_question": 5
-            },
-            "no": {
-                "decision": "rejected",
-                "legal_reason": "The individual lacks passing grades in required courses.",
-                "next_question": null
-            }
-        },
-        "5": {
-            "question_text": "Does the person have at least two years of practical experience in electrical installation work?",
+            "question_text": "Does the person have at least two years of practical experience in electrical installation work, where one must have practical experience in electrical installation work with an electrical installation company that operates in any of the types of activities specified in Chapter 4, § 2 or 3 of ELSÄK 2017:3?",
             "yes": {
                 "decision": "approved",
                 "next_question": 6
             },
             "no": {
                 "decision": "rejected",
-                "legal_reason": "Practical experience in electrical installation work is missing.",
+                "legal_reason": "The applicant does not have the course 'Practical Electrical Engineering' or 'Electrical Power Technology.'",
+                "next_question": 5
+            }
+        },
+        "5": {
+            "question_text": "Does the person have equivalent experience that could substitute for two years of practical experience in electrical installation work, where one must have practical experience in electrical installation work with an electrical installation company that operates in any of the types of activities specified in Chapter 4, § 2 or 3 of ELSÄK 2017:3?",
+            "yes": {
+                "decision": "approved",
+                "next_question": 6
+            },
+            "no": {
+                "decision": "rejected",
+                "legal_reason": "The applicant does not have enough practical experience.",
                 "next_question": null
             }
         },
         "6": {
-            "question_text": "Is at least one year of practical experience in electrical installation work at an electrical installation company that is active in one of the types of activities in Chapter 4, Section 2 or 3 ELSÄK 2017:3?",
+            "question_text": "Does the person seem suitable?",
             "yes": {
                 "decision": "approved",
-                "next_question": 7
+                "next_question": null
             },
             "no": {
                 "decision": "rejected",
-                "legal_reason": "The person is missing one year of practical experience in electrical installation work at an electrical installation company that is active in one of the types of activities in Chapter 4, Section 2 or 3 ELSÄK 2017:3.",
+                "legal_reason": "The applicant did not seem suitable enough to get authenticated.",
                 "next_question": null
             }
-        },
-        "7": {
-            "question_text": "Is the person deemed suitable?",
-            "yes": {
-                "next_question": "8"
-            },
-            "no": {
-                "decision": "rejected",
-                "legal_reason": "The person was deemed unsuitable."
-            }
-        },
-    "8": {
-        "question_text": "The person has been granted authorization."
-        
+        }
     }
-}
 }
