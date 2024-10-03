@@ -1,7 +1,7 @@
 {
     "questions": {
         "1": {
-            "question_text": "Does the education concern B-authorization?",
+            "question_text": "Does the authorisation concern B-authorization?",
             "yes": {
                 "decision": "approved",
                 "next_question": 2
@@ -63,6 +63,7 @@
             "question_text": "Does the person seem suitable?",
             "yes": {
                 "decision": "approved",
+                "legal reason": "The applicant passed all questions and authantication can be given" ,
                 "next_question": null
             },
             "no": {
