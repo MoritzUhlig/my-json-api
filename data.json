@@ -9,7 +9,7 @@
             "no": {
                 "decision": "rejected",
                 "legal_reason": "The wrong authorization was applied for.",
-                "next_question": "1n"
+                "next_question": null
             }
         },
 
