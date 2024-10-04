@@ -9,7 +9,7 @@
             "no": {
                 "decision": "rejected",
                 "legal_reason": "The wrong authorization was applied for.",
-                "next_question": null
+                "next_question": "end_card"
             }
         },
 
@@ -33,7 +33,7 @@
             "no": {
                 "decision": "rejected",
                 "legal_reason": "The applicant does not have the required education.",
-                "next_question": null
+                "next_question": "end_card"
             }
         },
         "4": {
@@ -56,8 +56,8 @@
             },
             "no": {
                 "decision": "rejected",
-                "legal_reason": "The applicant does not have enough practical experience.",
-                "next_question": null
+                "legal_reason": "does not have enough practical experience.",
+                "next_question": "end_card"
             }
         },
         "6": {
@@ -69,9 +69,12 @@
             },
             "no": {
                 "decision": "rejected",
-                "legal_reason": "The applicant did not seem suitable enough to get authenticated.",
-                "next_question": null
+                "legal_reason": "did not seem suitable enough to get authenticated.",
+                "next_question": "end_card"
             }
+        }
+        "end_card":{
+            "end_card_text": "The applicant was rejected due to"
         }
     }
 }
