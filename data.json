@@ -74,6 +74,9 @@
         },
         "end_card": {
             "end_card_text": "The applicant was rejected due to"
+        },
+        "sucessful": {
+            "succesful_card_text": "The applicant has sucessfully gone through all questions and authentication can be given"
         }
     }
 }
