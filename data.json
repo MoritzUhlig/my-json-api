@@ -72,7 +72,7 @@
                 "legal_reason": "did not seem suitable enough to get authenticated.",
                 "next_question": "end_card"
             }
-        }
+        },
         "end_card":{
             "end_card_text": "The applicant was rejected due to"
         }
