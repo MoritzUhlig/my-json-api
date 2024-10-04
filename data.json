@@ -64,7 +64,7 @@
             "yes": {
                 "decision": "approved",
                 "legal_reason": "The applicant passed all questions and authentication can be given" ,
-                "next_question": null
+                "next_question": "successful"
             },
             "no": {
                 "decision": "rejected",
@@ -76,7 +76,7 @@
             "end_card_text": "The applicant was rejected due to"
         },
         "successful": {
-            "succesful_card_text": "The applicant has sucessfully gone through all questions and authentication can be given"
+            "successful_card_text": "The applicant has sucessfully gone through all questions and authentication can be given"
         }
     }
 }
