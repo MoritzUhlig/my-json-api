@@ -12,7 +12,6 @@
                 "next_question": "end_card"
             }
         },
-
         "2": {
             "question_text": "Did the education include 'Practical Electrical Engineering' and 'Electrical Power Technology'?",
             "yes": {
@@ -64,7 +63,7 @@
             "question_text": "Does the person seem suitable?",
             "yes": {
                 "decision": "approved",
-                "legal_reason": "The applicant passed all questions and authantication can be given" ,
+                "legal_reason": "The applicant passed all questions and authentication can be given" ,
                 "next_question": null
             },
             "no": {
@@ -73,7 +72,7 @@
                 "next_question": "end_card"
             }
         },
-        "end_card":{
+        "end_card": {
             "end_card_text": "The applicant was rejected due to"
         }
     }
