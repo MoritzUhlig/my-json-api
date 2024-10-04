@@ -63,7 +63,6 @@
             "question_text": "Does the person seem suitable?",
             "yes": {
                 "decision": "approved",
-                "legal_reason": "The applicant passed all questions and authentication can be given" ,
                 "next_question": "successful"
             },
             "no": {
