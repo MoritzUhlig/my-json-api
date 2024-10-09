@@ -1,15 +1,19 @@
 {
     "questions": {
         "1": {
-            "question_text": "Does the authorization concern B-authorization?",
+            "question_text": "What type of authorization are you applying for?",
             "choices": {
-                "yes": {
+                "B-authorization": {
                     "decision": "approved",
                     "next_question": "2"
                 },
-                "no": {
+                "C-authorization": {
+                    "decision": "pending",
+                    "next_question": "3"
+                },
+                "D-authorization": {
                     "decision": "rejected",
-                    "legal_reason": "The wrong authorization was applied for.",
+                    "legal_reason": "This type of authorization is not available.",
                     "next_question": "end_card"
                 }
             }
