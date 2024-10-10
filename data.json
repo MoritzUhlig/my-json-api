@@ -113,7 +113,7 @@
                 },
                 "No": {
                     "decision": "rejected",
-                    "legal_reason": "src: §2.1",
+                    "legal_reason": "src: §2.1, §5,1",
                     "next_question": "successful"
                 }
             }
