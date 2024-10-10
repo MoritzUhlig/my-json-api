@@ -42,7 +42,7 @@
             }
         },
         "4": {
-            "question_text": "Is the responsibility regulated by another law?",
+            "question_text": "Is the responsibility of tork regulated by another law?",
             "choices": {
                 "Yes": {
                     "decision": "approved",
@@ -57,7 +57,7 @@
             }
         },
         "5": {
-            "question_text": "Is there an adequate causal link based on the action of the person?",
+                "question_text": "Is there an adequate casaulty based opponed the action of the person?    ",
             "choices": {
                 "Yes": {
                     "decision": "approved",
