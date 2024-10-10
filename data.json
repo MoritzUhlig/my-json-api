@@ -1,70 +1,65 @@
 {
     "questions": {
         "1": {
-            "question_text": "What type of authorization are you applying for?",
+            "question_text": "Has damage occured?",
             "choices": {
-                "B-authorization": {
+                "Yes": {
                     "decision": "approved",
                     "next_question": "2"
                 },
-                "C-authorization": {
+                "No": {
                     "decision": "pending",
-                    "next_question": "3"
-                },
-                "D-authorization": {
-                    "decision": "rejected",
-                    "legal_reason": "This type of authorization is not available.",
+                    "legal_reason": "src: §2.1",
                     "next_question": "end_card"
                 }
             }
         },
         "2": {
-            "question_text": "Did the education include 'Practical Electrical Engineering' and 'Electrical Power Technology'?",
+            "question_text": "Is there a contract between the parties?",
             "choices": {
                 "yes": {
                     "decision": "approved",
-                    "next_question": "4"
+                    "next_question": "3"
                 },
                 "no": {
                     "decision": "rejected",
-                    "next_question": "3"
+                    "next_question": "4"
                 }
             }
         },
+
+        
         "3": {
-            "question_text": "Did the applicant take any of the following courses?",
-            "choices": {
-                "Electrical Theory": {
+            "question_text": "Is the responsibility of damages regulated in the contract?",
+            
+                "yes": {
                     "decision": "approved",
-                    "next_question": "4"
-                },
-                "Electrical Power Technology": {
-                    "decision": "approved",
-                    "next_question": "4"
-                },
-                "None": {
-                    "decision": "rejected",
-                    "legal_reason": "The applicant does not have the required courses.",
                     "next_question": "end_card"
+                     "legal_reason": "src: §2.1",
+                },
+                "No": {
+                    "decision": "rejected",
+                    "next_question": "5"
                 }
             }
         },
         "4": {
-            "question_text": "Does the person have at least two years of practical experience in electrical installation work?",
+            "question_text": "Is the responsible of torkregulated by another law?",
             "choices": {
                 "yes": {
                     "decision": "approved",
-                    "next_question": "5"
+                    "legal_reason": "src: §2.1",
+                    "next_question": "end_card"
                 },
                 "no": {
                     "decision": "rejected",
-                    "legal_reason": "The applicant does not have enough experience.",
-                    "next_question": "end_card"
+                    "legal_reason": "src: §2.1",
+                    "next_question": "5"
                 }
             }
         },
         "5": {
-            "question_text": "Has the person worked with an authorized electrical installation company?",
+            "question_text": "Is there an adequate casaulty based opponed the action of the person?",
             "choices": {
                 "yes": {
                     "decision": "approved",
@@ -72,30 +67,66 @@
                 },
                 "no": {
                     "decision": "rejected",
-                    "legal_reason": "The applicant lacks relevant experience in a company setting.",
+                    "legal_reason": "src: §2.1",
                     "next_question": "end_card"
                 }
             }
         },
         "6": {
-            "question_text": "Does the person seem suitable for authorization?",
+            "question_text": "Has the damage occured intentionally or by negliance?",
             "choices": {
                 "yes": {
                     "decision": "approved",
-                    "next_question": "successful"
+                    "next_question": "7"
                 },
                 "no": {
                     "decision": "rejected",
-                    "legal_reason": "The applicant did not seem suitable enough for authorization.",
+                    "legal_reason": "src: §2.1",
                     "next_question": "end_card"
                 }
             }
         },
+  "7": {
+            "question_text": "",
+            "choices": {
+                "Personal damage": {
+                    "decision": "approved",
+                    "next_question": "8"
+                },
+                "Property damage": {
+                    "decision": "rejected",
+                    "legal_reason": "src: §2.1",
+                    "next_question": "successful"
+                },
+                "Other damages": {
+                    "decision": "rejected",
+                    "legal_reason": "src: §2.1",
+                    "next_question": "end_card"
+                }
+            }
+        },
+  "8": {
+            "question_text": "Has the person died?",
+            "choices": {
+                "yes": {
+                    "decision": "approved",
+                    "legal_reason": "src: §2.1 , §5.1, §5.2",
+                    "next_question": "successful"
+                },
+                "no": {
+                    "decision": "rejected",
+                    "legal_reason": "src: §2.1",
+                    "next_question": "successful"
+                }
+            }
+        },
+   
+
         "end_card": {
-            "end_card_text": "The applicant was rejected due to insufficient qualifications."
+            "end_card_text": "The tort is not applicable at this case"
         },
         "successful": {
-            "successful_card_text": "The applicant has successfully completed all requirements and can be authorized."
+            "successful_card_text": "The person is liable for the damages."
         }
     }
 }
