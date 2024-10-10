@@ -37,7 +37,7 @@
                 },
                 "No": {
                     "decision": "rejected",
-                    "next_question": "5"
+                    "next_question": "4"
                 }
             }
         },
