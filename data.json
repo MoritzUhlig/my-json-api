@@ -1,7 +1,7 @@
 {
     "questions": {
         "1": {
-            "question_text": "Has damage occured?",
+            "question_text": "Has damage occurred?",
             "choices": {
                 "Yes": {
                     "decision": "approved",
@@ -17,25 +17,23 @@
         "2": {
             "question_text": "Is there a contract between the parties?",
             "choices": {
-                "yes": {
+                "Yes": {
                     "decision": "approved",
                     "next_question": "3"
                 },
-                "no": {
+                "No": {
                     "decision": "rejected",
                     "next_question": "4"
                 }
             }
         },
-
-        
         "3": {
             "question_text": "Is the responsibility of damages regulated in the contract?",
-            
-                "yes": {
+            "choices": {
+                "Yes": {
                     "decision": "approved",
+                    "legal_reason": "src: §2.1",
                     "next_question": "end_card"
-                     "legal_reason": "src: §2.1",
                 },
                 "No": {
                     "decision": "rejected",
@@ -44,14 +42,14 @@
             }
         },
         "4": {
-            "question_text": "Is the responsible of torkregulated by another law?",
+            "question_text": "Is the responsibility regulated by another law?",
             "choices": {
-                "yes": {
+                "Yes": {
                     "decision": "approved",
                     "legal_reason": "src: §2.1",
                     "next_question": "end_card"
                 },
-                "no": {
+                "No": {
                     "decision": "rejected",
                     "legal_reason": "src: §2.1",
                     "next_question": "5"
@@ -59,13 +57,13 @@
             }
         },
         "5": {
-            "question_text": "Is there an adequate casaulty based opponed the action of the person?",
+            "question_text": "Is there an adequate causal link based on the action of the person?",
             "choices": {
-                "yes": {
+                "Yes": {
                     "decision": "approved",
                     "next_question": "6"
                 },
-                "no": {
+                "No": {
                     "decision": "rejected",
                     "legal_reason": "src: §2.1",
                     "next_question": "end_card"
@@ -73,21 +71,21 @@
             }
         },
         "6": {
-            "question_text": "Has the damage occured intentionally or by negliance?",
+            "question_text": "Has the damage occurred intentionally or by negligence?",
             "choices": {
-                "yes": {
+                "Yes": {
                     "decision": "approved",
                     "next_question": "7"
                 },
-                "no": {
+                "No": {
                     "decision": "rejected",
                     "legal_reason": "src: §2.1",
                     "next_question": "end_card"
                 }
             }
         },
-  "7": {
-            "question_text": "",
+        "7": {
+            "question_text": "What type of damage has occurred?",
             "choices": {
                 "Personal damage": {
                     "decision": "approved",
@@ -105,25 +103,23 @@
                 }
             }
         },
-  "8": {
+        "8": {
             "question_text": "Has the person died?",
             "choices": {
-                "yes": {
+                "Yes": {
                     "decision": "approved",
-                    "legal_reason": "src: §2.1 , §5.1, §5.2",
+                    "legal_reason": "src: §2.1, §5.1, §5.2",
                     "next_question": "successful"
                 },
-                "no": {
+                "No": {
                     "decision": "rejected",
                     "legal_reason": "src: §2.1",
                     "next_question": "successful"
                 }
             }
         },
-   
-
         "end_card": {
-            "end_card_text": "The tort is not applicable at this case"
+            "end_card_text": "The tort is not applicable in this case."
         },
         "successful": {
             "successful_card_text": "The person is liable for the damages."
