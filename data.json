@@ -1,4 +1,9 @@
 {
+
+    "header": {
+        "law_name": "Tort Liability Law",
+        "description": "A procedure to assess responsibility for damages."
+    },
     "questions": {
         "1": {
             "question_text": "Has damage occurred?",
