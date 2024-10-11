@@ -1,8 +1,7 @@
 {
-
     "header": {
         "law_name": "Tort Liability Law",
-       "description": "Outlines the rules for compensation when a person or entity causes harm through intent or negligence. Covers personal injury, property damage, and financial loss, with provisions for employer liability."
+        "description": "Outlines the rules for compensation when a person or entity causes harm through intent or negligence. Covers personal injury, property damage, and financial loss, with provisions for employer liability."
     },
     "questions": {
         "1": {
@@ -33,7 +32,7 @@
             }
         },
         "3": {
-            "question_text": "Is the responsibility of damages regulated in the contract?",
+            "question_text": "Is the responsibility for damages regulated in the contract?",
             "choices": {
                 "Yes": {
                     "decision": "approved",
@@ -47,7 +46,7 @@
             }
         },
         "4": {
-            "question_text": "Is the responsibility of tork regulated by another law?",
+            "question_text": "Is the responsibility for tort regulated by another law?",
             "choices": {
                 "Yes": {
                     "decision": "approved",
@@ -62,7 +61,7 @@
             }
         },
         "5": {
-                "question_text": "Is there an adequate casaulty based opponed the action of the person?    ",
+            "question_text": "Is there an adequate causality based upon the action of the person?",
             "choices": {
                 "Yes": {
                     "decision": "approved",
@@ -118,7 +117,7 @@
                 },
                 "No": {
                     "decision": "rejected",
-                    "legal_reason": "src: §2.1, §5,1",
+                    "legal_reason": "src: §2.1, §5.1",
                     "next_question": "successful"
                 }
             }
