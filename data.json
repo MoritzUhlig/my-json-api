@@ -13,7 +13,12 @@
                 },
                 "No": {
                     "decision": "pending",
-                    "legal_reason": "src: §2.1",
+                    "legal_reason": [
+                        {
+                            "url": "https://www.riksdagen.se/sv/dokument-och-lagar/dokument/svensk-forfattningssamling/skadestandslag-1972207_sfs-1972-207/#K2",
+                            "text": "§2.1"
+                        }
+                    ],
                     "next_question": "end_card"
                 }
             }
@@ -36,7 +41,12 @@
             "choices": {
                 "Yes": {
                     "decision": "approved",
-                    "legal_reason": "src: §2.1",
+                    "legal_reason": [
+                        {
+                            "url": "https://www.riksdagen.se/sv/dokument-och-lagar/dokument/svensk-forfattningssamling/skadestandslag-1972207_sfs-1972-207/#K2",
+                            "text": "§2.1"
+                        }
+                    ],
                     "next_question": "end_card"
                 },
                 "No": {
@@ -50,12 +60,22 @@
             "choices": {
                 "Yes": {
                     "decision": "approved",
-                    "legal_reason": "src: §2.1",
+                    "legal_reason": [
+                        {
+                            "url": "https://www.riksdagen.se/sv/dokument-och-lagar/dokument/svensk-forfattningssamling/skadestandslag-1972207_sfs-1972-207/#K2",
+                            "text": "§2.1"
+                        }
+                    ],
                     "next_question": "end_card"
                 },
                 "No": {
                     "decision": "rejected",
-                    "legal_reason": "src: §2.1",
+                    "legal_reason": [
+                        {
+                            "url": "https://www.riksdagen.se/sv/dokument-och-lagar/dokument/svensk-forfattningssamling/skadestandslag-1972207_sfs-1972-207/#K2",
+                            "text": "§2.1"
+                        }
+                    ],
                     "next_question": "5"
                 }
             }
@@ -69,7 +89,12 @@
                 },
                 "No": {
                     "decision": "rejected",
-                    "legal_reason": "src: §2.1",
+                    "legal_reason": [
+                        {
+                            "url": "https://www.riksdagen.se/sv/dokument-och-lagar/dokument/svensk-forfattningssamling/skadestandslag-1972207_sfs-1972-207/#K2",
+                            "text": "§2.1"
+                        }
+                    ],
                     "next_question": "end_card"
                 }
             }
@@ -83,7 +108,12 @@
                 },
                 "No": {
                     "decision": "rejected",
-                    "legal_reason": "src: §2.1",
+                    "legal_reason": [
+                        {
+                            "url": "https://www.riksdagen.se/sv/dokument-och-lagar/dokument/svensk-forfattningssamling/skadestandslag-1972207_sfs-1972-207/#K2",
+                            "text": "§2.1"
+                        }
+                    ],
                     "next_question": "end_card"
                 }
             }
@@ -97,12 +127,22 @@
                 },
                 "Property damage": {
                     "decision": "rejected",
-                    "legal_reason": "src: §2.1",
+                    "legal_reason": [
+                        {
+                            "url": "https://www.riksdagen.se/sv/dokument-och-lagar/dokument/svensk-forfattningssamling/skadestandslag-1972207_sfs-1972-207/#K2",
+                            "text": "§2.1"
+                        }
+                    ],
                     "next_question": "successful"
                 },
                 "Other damages": {
                     "decision": "rejected",
-                    "legal_reason": "src: §2.1",
+                    "legal_reason": [
+                        {
+                            "url": "https://www.riksdagen.se/sv/dokument-och-lagar/dokument/svensk-forfattningssamling/skadestandslag-1972207_sfs-1972-207/#K2",
+                            "text": "§2.1"
+                        }
+                    ],
                     "next_question": "end_card"
                 }
             }
@@ -112,12 +152,34 @@
             "choices": {
                 "Yes": {
                     "decision": "approved",
-                    "legal_reason": "src: §2.1, §5.1, §5.2",
+                    "legal_reason": [
+                        {
+                            "url": "https://www.riksdagen.se/sv/dokument-och-lagar/dokument/svensk-forfattningssamling/skadestandslag-1972207_sfs-1972-207/#K2",
+                            "text": "§2.1"
+                        },
+                        {
+                            "url": "https://www.riksdagen.se/sv/dokument-och-lagar/dokument/svensk-forfattningssamling/skadestandslag-1972207_sfs-1972-207/#K5",
+                            "text": "§5.1"
+                        },
+                        {
+                            "url": "https://www.riksdagen.se/sv/dokument-och-lagar/dokument/svensk-forfattningssamling/skadestandslag-1972207_sfs-1972-207/#K5",
+                            "text": "§5.2"
+                        }
+                    ],
                     "next_question": "successful"
                 },
                 "No": {
                     "decision": "rejected",
-                    "legal_reason": "src: §2.1, §5.1",
+                    "legal_reason": [
+                        {
+                            "url": "https://www.riksdagen.se/sv/dokument-och-lagar/dokument/svensk-forfattningssamling/skadestandslag-1972207_sfs-1972-207/#K2",
+                            "text": "§2.1"
+                        },
+                        {
+                            "url": "https://www.riksdagen.se/sv/dokument-och-lagar/dokument/svensk-forfattningssamling/skadestandslag-1972207_sfs-1972-207/#K5",
+                            "text": "§5.1"
+                        }
+                    ],
                     "next_question": "successful"
                 }
             }
