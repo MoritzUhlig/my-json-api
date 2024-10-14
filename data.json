@@ -185,10 +185,10 @@
             }
         },
         "end_card": {
-            "end_card_text": "The tort is not applicable in this case."
+            "end_card_text": "The tort is not applicable in this case according to:"
         },
         "successful": {
-            "successful_card_text": "The person is liable for the damages."
+            "successful_card_text": "The person is liable for the damages according to:"
         }
     }
 }
