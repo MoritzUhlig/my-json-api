@@ -81,7 +81,7 @@
             }
         },
         "5": {
-            "question_text": "Is there an adequate causality based upon the action of the person? Could a reaseonable person have predicted that this action would likely lead to this type of damages? ",
+            "question_text": "Is there an adequate causality based upon the action of the person? Could a reasonable person have predicted that this action would likely lead to this type of damages? ",
             "choices": {
                 "Yes": {
                     "decision": "approved",
