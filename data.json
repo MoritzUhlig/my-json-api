@@ -8,11 +8,9 @@
             "question_text": "Has damage occurred?",
             "choices": {
                 "Yes": {
-                    "decision": "approved",
                     "next_question": "2"
                 },
                 "No": {
-                    "decision": "pending",
                     "legal_reason": [
                         {
                             "url": "https://www.riksdagen.se/sv/dokument-och-lagar/dokument/svensk-forfattningssamling/skadestandslag-1972207_sfs-1972-207/#K2",
@@ -27,11 +25,9 @@
             "question_text": "Is there a contract between the parties?",
             "choices": {
                 "Yes": {
-                    "decision": "approved",
                     "next_question": "3"
                 },
                 "No": {
-                    "decision": "rejected",
                     "next_question": "4"
                 }
             }
@@ -40,7 +36,6 @@
             "question_text": "Is the responsibility for damages regulated in the contract?",
             "choices": {
                 "Yes": {
-                    "decision": "approved",
                     "legal_reason": [
                         {
                             "url": "https://www.riksdagen.se/sv/dokument-och-lagar/dokument/svensk-forfattningssamling/skadestandslag-1972207_sfs-1972-207/#K2",
@@ -50,7 +45,6 @@
                     "next_question": "end_card"
                 },
                 "No": {
-                    "decision": "rejected",
                     "next_question": "4"
                 }
             }
@@ -59,7 +53,6 @@
             "question_text": "Is the responsibility for tort regulated by another law?",
             "choices": {
                 "Yes": {
-                    "decision": "approved",
                     "legal_reason": [
                         {
                             "url": "https://www.riksdagen.se/sv/dokument-och-lagar/dokument/svensk-forfattningssamling/skadestandslag-1972207_sfs-1972-207/#K2",
@@ -69,7 +62,6 @@
                     "next_question": "end_card"
                 },
                 "No": {
-                    "decision": "rejected",
                     "legal_reason": [
                         {
                             "url": "https://www.riksdagen.se/sv/dokument-och-lagar/dokument/svensk-forfattningssamling/skadestandslag-1972207_sfs-1972-207/#K2",
@@ -81,14 +73,12 @@
             }
         },
         "5": {
-            "question_text": "Is there an adequate causality based upon the action of the person? Could a reasonable person have predicted that this action would likely lead to this type of damages? ",
+            "question_text": "Is there an adequate causality based upon the action of the person? Could a reasonable person have predicted that this action would likely lead to this type of damages?",
             "choices": {
                 "Yes": {
-                    "decision": "approved",
                     "next_question": "6"
                 },
                 "No": {
-                    "decision": "rejected",
                     "legal_reason": [
                         {
                             "url": "https://www.riksdagen.se/sv/dokument-och-lagar/dokument/svensk-forfattningssamling/skadestandslag-1972207_sfs-1972-207/#K2",
@@ -103,11 +93,9 @@
             "question_text": "Has the damage occurred intentionally or by negligence?",
             "choices": {
                 "Yes": {
-                    "decision": "approved",
                     "next_question": "7"
                 },
                 "No": {
-                    "decision": "rejected",
                     "legal_reason": [
                         {
                             "url": "https://www.riksdagen.se/sv/dokument-och-lagar/dokument/svensk-forfattningssamling/skadestandslag-1972207_sfs-1972-207/#K2",
@@ -122,11 +110,9 @@
             "question_text": "What type of damage has occurred?",
             "choices": {
                 "Personal damage": {
-                    "decision": "approved",
                     "next_question": "8"
                 },
                 "Property damage": {
-                    "decision": "rejected",
                     "legal_reason": [
                         {
                             "url": "https://www.riksdagen.se/sv/dokument-och-lagar/dokument/svensk-forfattningssamling/skadestandslag-1972207_sfs-1972-207/#K2",
@@ -136,7 +122,6 @@
                     "next_question": "successful"
                 },
                 "Other damages": {
-                    "decision": "rejected",
                     "legal_reason": [
                         {
                             "url": "https://www.riksdagen.se/sv/dokument-och-lagar/dokument/svensk-forfattningssamling/skadestandslag-1972207_sfs-1972-207/#K2",
@@ -151,7 +136,6 @@
             "question_text": "Has the person died?",
             "choices": {
                 "Yes": {
-                    "decision": "approved",
                     "legal_reason": [
                         {
                             "url": "https://www.riksdagen.se/sv/dokument-och-lagar/dokument/svensk-forfattningssamling/skadestandslag-1972207_sfs-1972-207/#K2",
@@ -169,7 +153,6 @@
                     "next_question": "successful"
                 },
                 "No": {
-                    "decision": "rejected",
                     "legal_reason": [
                         {
                             "url": "https://www.riksdagen.se/sv/dokument-och-lagar/dokument/svensk-forfattningssamling/skadestandslag-1972207_sfs-1972-207/#K2",
@@ -185,7 +168,8 @@
             }
         },
         "end_card": {
-            "end_card_text": "The tort is not applicable in this case according to:"
+            "end_card_text": "The tort is not applicable in this case according to:",
+            "test": "test"
         },
         "successful": {
             "successful_card_text": "The person is liable for the damages according to:"
